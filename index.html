@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PIKUL Precision Parts · งาน CNC และงานแผ่นโลหะ (เว็บไซต์ตัวอย่าง)</title>
+<meta name="description" content="เว็บไซต์ตัวอย่างของบริษัทสมมติ PIKUL Precision Parts: งาน CNC กัด-กลึง ตัดเลเซอร์ พับ เชื่อม ส่งแบบขอใบเสนอราคาภายใน 24 ชั่วโมง">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#rfq" data-i18n="skip">ข้ามไปที่ฟอร์มขอราคา</a>
+
+<div class="notice" role="note">
+  <span data-i18n="notice">เว็บไซต์ตัวอย่างเพื่อแสดงผลงาน · บริษัท สินค้า และตัวเลขทั้งหมดเป็นข้อมูลสมมติ</span>
+</div>
+
+<div class="sheet">
+  <div class="ruler ruler-x" aria-hidden="true"></div>
+  <div class="ruler ruler-y" aria-hidden="true"></div>
+
+  <header class="top">
+    <a class="brand" href="#" aria-label="PIKUL Precision Parts">
+      <svg class="mark" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M24 4l6.5 6.5h9v9L46 24l-6.5 6.5v9h-9L24 46l-6.5-6.5h-9v-9L2 24l6.5-6.5v-9h9z" />
+        <circle cx="24" cy="24" r="7" />
+        <circle cx="24" cy="11.5" r="2.2" /><circle cx="36.5" cy="24" r="2.2" /><circle cx="24" cy="36.5" r="2.2" /><circle cx="11.5" cy="24" r="2.2" />
+      </svg>
+      <span class="word">PIKUL<small>PRECISION PARTS</small></span>
+    </a>
+    <nav class="nav" aria-label="เมนูหลัก">
+      <a href="#make"><i class="pn">P-01</i><span data-i18n="nav.make">งานที่รับ</span></a>
+      <a href="#machines"><i class="pn">P-02</i><span data-i18n="nav.machines">เครื่องจักร</span></a>
+      <a href="#quality"><i class="pn">P-03</i><span data-i18n="nav.quality">คุณภาพ</span></a>
+      <a href="#process"><i class="pn">P-04</i><span data-i18n="nav.process">ขั้นตอน</span></a>
+      <a href="#contact"><i class="pn">P-05</i><span data-i18n="nav.contact">ติดต่อ</span></a>
+    </nav>
+    <div class="top-actions">
+      <div class="lang" role="group" aria-label="ภาษา / Language">
+        <button type="button" data-lang="th" aria-pressed="true">TH</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn-cut" href="#rfq" data-i18n="cta.quote">ขอใบเสนอราคา</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero: headline + the RFQ bracket -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title"><span data-i18n="hero.l1">ส่งแบบมา</span><br><span data-i18n="hero.l2">ได้ราคาใน 24 ชม.</span></h1>
+        <p class="en-line" lang="en">SEND THE DRAWING · QUOTE WITHIN 24 HOURS</p>
+        <p class="lead" data-i18n="hero.lead">รับงาน CNC กัด-กลึง และงานแผ่นโลหะ ตัด พับ เชื่อม ตั้งแต่ชิ้นต้นแบบ 1 ชิ้นจนถึงผลิต 10,000 ชิ้น ครบในโรงงานเดียว</p>
+
+        <div class="dims" aria-label="ความสามารถหลัก">
+          <div class="part dim-washer" data-shape="round" data-holes="">
+            <svg class="drawing" viewBox="0 0 120 120" aria-hidden="true">
+              <circle cx="60" cy="60" r="44" /><circle cx="60" cy="60" r="16" />
+              <path class="dimline" d="M16 112h88M16 106v12M104 106v12" />
+            </svg>
+            <div class="dim-text">
+              <strong>±0.01 <span>มม.</span></strong>
+              <span data-i18n="dim.tol">ความละเอียดงานกลึงและกัด</span>
+            </div>
+          </div>
+          <div class="part dim-slot" data-chamfer="10" data-holes="l,r">
+            <div class="dim-text">
+              <strong>1–10,000 <span data-i18n="unit.pcs">ชิ้น</span></strong>
+              <span data-i18n="dim.qty">ต่อล็อต ต้นแบบถึงผลิตจริง</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="part rfq" id="rfq" data-chamfer="28" data-notch="1" data-holes="tl,br" novalidate aria-labelledby="rfq-title">
+        <span class="film" aria-hidden="true"><span>PROTECTIVE FILM · PEEL AFTER FIT</span></span>
+        <div class="tag" aria-hidden="true">RFQ · SUS304 t3.0</div>
+        <h2 id="rfq-title" data-i18n="rfq.title">ขอใบเสนอราคา</h2>
+        <p class="rfq-sub" data-i18n="rfq.sub">แนบแบบ ระบุวัสดุและจำนวน ทีมขายตอบกลับภายใน 24 ชม. ทำการ</p>
+
+        <label class="drop" for="file">
+          <input id="file" name="file" type="file" accept=".pdf,.dwg,.dxf,.step,.stp,.igs,.iges,.png,.jpg" required>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V4M7.5 8.5 12 4l4.5 4.5M4 15v4h16v-4" /></svg>
+          <span class="drop-main" data-i18n="rfq.drop">ลากไฟล์แบบมาวาง หรือคลิกเพื่อเลือก</span>
+          <span class="drop-hint" data-i18n="rfq.dropHint">PDF, DWG, DXF, STEP, IGES · ไม่เกิน 20 MB</span>
+          <span class="drop-file" aria-live="polite"></span>
+        </label>
+
+        <div class="row">
+          <div class="field">
+            <label for="process" data-i18n="rfq.process">ประเภทงาน</label>
+            <select id="process" name="process" required>
+              <option value="" data-i18n="rfq.choose">เลือก</option>
+              <option data-i18n="opt.mill">CNC กัด (Milling)</option>
+              <option data-i18n="opt.turn">CNC กลึง (Turning)</option>
+              <option data-i18n="opt.sheet">ตัดเลเซอร์ + พับ</option>
+              <option data-i18n="opt.weld">เชื่อม / ประกอบ</option>
+              <option data-i18n="opt.unsure">ยังไม่แน่ใจ ให้ช่วยแนะนำ</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="material" data-i18n="rfq.material">วัสดุ</label>
+            <select id="material" name="material" required>
+              <option value="" data-i18n="rfq.choose">เลือก</option>
+              <option>SUS304</option><option>SS400</option><option>AL6061-T6</option><option>AL5052</option>
+              <option>C3604 (ทองเหลือง)</option><option>POM</option>
+              <option data-i18n="opt.other">อื่น ๆ (ระบุในหมายเหตุ)</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="qty" data-i18n="rfq.qty">จำนวน (ชิ้น)</label>
+            <input id="qty" name="qty" type="number" inputmode="numeric" min="1" max="100000" placeholder="เช่น 200" data-i18n-placeholder="rfq.qtyPh" required>
+          </div>
+          <div class="field">
+            <label for="contact" data-i18n="rfq.contact">อีเมล หรือ LINE ID</label>
+            <input id="contact" name="contact" type="text" autocomplete="email" placeholder="name@company.co.th" required>
+          </div>
+        </div>
+        <button class="btn btn-cut btn-block" type="submit">
+          <span data-i18n="rfq.submit">ส่งแบบขอราคา</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6.5 18.5 12 13 17.5" /></svg>
+        </button>
+        <p class="form-error" role="alert" aria-live="assertive"></p>
+        <p class="privacy" data-i18n="rfq.privacy">เว็บไซต์ตัวอย่าง: ฟอร์มนี้ตรวจข้อมูลได้จริง แต่ไม่ส่งข้อมูลออกไปที่ใด</p>
+
+        <div class="rfq-done" hidden>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" /></svg>
+          <h3 data-i18n="done.title">ได้รับแบบแล้ว</h3>
+          <p data-i18n="done.body">เลขที่คำขอ <b class="rfq-no">RFQ-0000</b> ทีมขายจะส่งใบเสนอราคาภายใน 24 ชม. ทำการ (ตัวอย่าง ไม่มีการส่งข้อมูลจริง)</p>
+          <button type="button" class="btn btn-ghost" data-i18n="done.again">ส่งแบบอีกชิ้น</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- What we make -->
+    <section class="section make" id="make" aria-labelledby="make-title">
+      <div class="section-head">
+        <h2 id="make-title" data-i18n="make.title">งานที่เรารับผลิต</h2>
+        <p class="en-line" lang="en">WHAT WE MAKE</p>
+      </div>
+      <div class="nest">
+        <article class="part cap cap-mill" data-chamfer="22" data-holes="tr,bl">
+          <span class="pnum" aria-hidden="true">P-0101 · AL6061 t40</span>
+          <svg class="drawing" viewBox="0 0 220 140" aria-hidden="true">
+            <path d="M20 60l90-40 90 40-90 40z" /><path d="M20 60v40l90 40 90-40V60" /><path d="M110 100v40" />
+            <path d="M70 58l40-18 40 18-40 18z" class="pocket" /><circle cx="160" cy="62" r="6" class="pocket" />
+          </svg>
+          <h3 data-i18n="cap.mill">CNC กัด</h3>
+          <p class="en-line" lang="en">MILLING · 3 / 5 AXIS</p>
+          <dl>
+            <div><dt data-i18n="spec.size">ขนาดสูงสุด</dt><dd>1,270 × 508 × 635 <span data-i18n="unit.mm">มม.</span></dd></div>
+            <div><dt data-i18n="spec.tol">ความละเอียด</dt><dd>±0.01 <span data-i18n="unit.mm">มม.</span></dd></div>
+            <div><dt data-i18n="spec.axis">แกน</dt><dd data-i18n="spec.axisVal">3 แกน และ 5 แกน</dd></div>
+          </dl>
+        </article>
+        <article class="part cap cap-turn" data-shape="round" data-holes="">
+          <span class="pnum" aria-hidden="true">P-0102 · SUS304 Ø60</span>
+          <svg class="drawing" viewBox="0 0 220 140" aria-hidden="true">
+            <path d="M20 55h40v30H20zM60 40h90v60H60zM150 50h50v40h-50z" /><path d="M14 70h192" class="center" />
+            <path d="M60 40l-6 6v48l6 6M150 50l6-6" />
+          </svg>
+          <h3 data-i18n="cap.turn">CNC กลึง</h3>
+          <p class="en-line" lang="en">TURNING · MILL-TURN</p>
+          <dl>
+            <div><dt data-i18n="spec.dia">เส้นผ่านศูนย์กลาง</dt><dd>Ø 3–350 <span data-i18n="unit.mm">มม.</span></dd></div>
+            <div><dt data-i18n="spec.len">ยาวสูงสุด</dt><dd>600 <span data-i18n="unit.mm">มม.</span></dd></div>
+          </dl>
+        </article>
+        <article class="part cap cap-sheet" data-chamfer="16" data-notch="1" data-holes="tl,tr">
+          <span class="pnum" aria-hidden="true">P-0103 · SPCC t2.0</span>
+          <svg class="drawing" viewBox="0 0 220 140" aria-hidden="true">
+            <path d="M30 100l60-30h100l-60 30z" /><path d="M90 70V25h100v45" /><path d="M30 100v8l60-30h100" />
+            <circle cx="140" cy="45" r="7" class="pocket" /><path d="M110 40h10M160 40h10" class="pocket" />
+          </svg>
+          <h3 data-i18n="cap.sheet">ตัดเลเซอร์ + พับ</h3>
+          <p class="en-line" lang="en">FIBER LASER · PRESS BRAKE</p>
+          <dl>
+            <div><dt data-i18n="spec.thk">ความหนา</dt><dd>0.5–20 <span data-i18n="unit.mm">มม.</span></dd></div>
+            <div><dt data-i18n="spec.table">โต๊ะตัด</dt><dd>3,000 × 1,500 <span data-i18n="unit.mm">มม.</span></dd></div>
+            <div><dt data-i18n="spec.bend">ความยาวพับ</dt><dd>3,100 <span data-i18n="unit.mm">มม.</span></dd></div>
+          </dl>
+        </article>
+        <article class="part cap cap-weld" data-chamfer="22" data-holes="tl,br">
+          <span class="pnum" aria-hidden="true">P-0104 · SS400 t6.0</span>
+          <svg class="drawing" viewBox="0 0 220 140" aria-hidden="true">
+            <path d="M30 110V40h160v70" /><path d="M30 40l20-15h160l-20 15M210 25v70l-20 15" /><path d="M30 75h160" />
+            <path d="M58 75l6-4 6 4 6-4 6 4 6-4 6 4" class="bead" />
+          </svg>
+          <h3 data-i18n="cap.weld">เชื่อม & ทำผิว</h3>
+          <p class="en-line" lang="en">TIG / MIG · FINISHING</p>
+          <dl>
+            <div><dt data-i18n="spec.weld">งานเชื่อม</dt><dd>TIG, MIG, Spot</dd></div>
+            <div><dt data-i18n="spec.finish">ทำผิว</dt><dd data-i18n="spec.finishVal">อโนไดซ์ ชุบซิงค์ พ่นสีฝุ่น ขัดเงา</dd></div>
+          </dl>
+        </article>
+      </div>
+
+      <div class="materials" aria-label="วัสดุที่ใช้บ่อย">
+        <span class="mat-label" data-i18n="mat.label">วัสดุที่ใช้บ่อย</span>
+        <ul>
+          <li><i style="--c:#cfd5da"></i>SUS304 / 316</li>
+          <li><i style="--c:#8f969c"></i>SS400 / S45C</li>
+          <li><i style="--c:#dfe3e6"></i>AL6061 / 5052</li>
+          <li><i style="--c:#c9a74e"></i>C3604</li>
+          <li><i style="--c:#b8733f"></i>C1100</li>
+          <li><i style="--c:#f2f0ea"></i>POM / PE</li>
+          <li><i style="--c:#c8a77a"></i>PEEK</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Machine list as a nest report -->
+    <section class="section machines" id="machines" aria-labelledby="mach-title">
+      <div class="section-head">
+        <h2 id="mach-title" data-i18n="mach.title">เครื่องจักรในโรงงาน</h2>
+        <p class="en-line" lang="en">MACHINE LIST</p>
+      </div>
+      <div class="part report" data-chamfer="18" data-holes="tl,tr,bl,br">
+        <div class="report-head" aria-hidden="true">
+          <span>NEST REPORT · PLANT 1</span><span>SHEET 3000 × 1500</span><span>REV C</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th scope="col" data-i18n="t.machine">เครื่องจักร</th><th scope="col" data-i18n="t.model">รุ่น</th><th scope="col" class="num" data-i18n="t.qty">จำนวน</th><th scope="col" data-i18n="t.range">ระยะทำงาน</th></tr>
+            </thead>
+            <tbody>
+              <tr><td data-i18n="m.mc5">Machining Center 5 แกน</td><td>DMG MORI DMU 50</td><td class="num">2</td><td>650 × 520 × 475</td></tr>
+              <tr><td data-i18n="m.mc3">Machining Center 3 แกน</td><td>Haas VF-4</td><td class="num">6</td><td>1,270 × 508 × 635</td></tr>
+              <tr><td data-i18n="m.lathe">CNC Lathe</td><td>Mazak QTN-200</td><td class="num">4</td><td>Ø 350 × 600</td></tr>
+              <tr><td data-i18n="m.laser">Fiber Laser 6 kW</td><td>Bystronic ByStar Fiber</td><td class="num">1</td><td>3,000 × 1,500 · t ≤ 20</td></tr>
+              <tr><td data-i18n="m.brake">Press Brake 130 ตัน</td><td>Amada HG-1303</td><td class="num">2</td><td data-i18n="m.brakeRange">ยาวพับ 3,100</td></tr>
+              <tr><td data-i18n="m.cmm">เครื่องวัด 3 มิติ (CMM)</td><td>Mitutoyo Crysta-Apex S</td><td class="num">1</td><td>700 × 700 × 600</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="report-foot" data-i18n="mach.foot">หน่วย มม. · รายการเครื่องจักรเป็นข้อมูลตัวอย่าง</p>
+      </div>
+    </section>
+
+    <!-- Quality -->
+    <section class="section quality" id="quality" aria-labelledby="q-title">
+      <div class="q-copy">
+        <h2 id="q-title" data-i18n="q.title">ตรวจทุกชิ้นก่อนส่ง</h2>
+        <p class="en-line" lang="en">INSPECTED BEFORE IT SHIPS</p>
+        <p class="lead" data-i18n="q.lead">ชิ้นงานแรกของทุกล็อตวัดด้วย CMM และแนบรายงานผลตรวจไปพร้อมของ คุณเห็นตัวเลขจริงก่อนเซ็นรับ</p>
+        <ul class="checks">
+          <li data-i18n="q.c1">รายงานผลตรวจชิ้นแรก (FAI) ทุกล็อต</li>
+          <li data-i18n="q.c2">ใบรับรองวัสดุ (Mill certificate) จากผู้ผลิตเหล็ก</li>
+          <li data-i18n="q.c3">ระบบคุณภาพ ISO 9001:2015 (ข้อมูลตัวอย่าง)</li>
+        </ul>
+      </div>
+      <div class="part inspect" data-chamfer="20" data-notch="1" data-holes="tr,bl">
+        <div class="inspect-head"><span data-i18n="i.title">รายงานผลตรวจ</span><span>PN 7702-A · LOT 2610</span></div>
+        <div class="table-wrap">
+          <table class="inspect-table">
+            <thead><tr><th scope="col" data-i18n="i.feature">ตำแหน่ง</th><th scope="col" class="num" data-i18n="i.nominal">ค่าในแบบ</th><th scope="col" class="num" data-i18n="i.actual">วัดได้</th><th scope="col" class="num" data-i18n="i.dev">ต่าง</th><th scope="col" data-i18n="i.result">ผล</th></tr></thead>
+            <tbody>
+              <tr><td>A1 · Ø20 H7</td><td class="num">20.000</td><td class="num">20.008</td><td class="num">+0.008</td><td><span class="ok">OK</span></td></tr>
+              <tr><td>A2 · 45 ±0.02</td><td class="num">45.000</td><td class="num">44.991</td><td class="num">−0.009</td><td><span class="ok">OK</span></td></tr>
+              <tr><td>B1 · 120 ±0.05</td><td class="num">120.000</td><td class="num">120.031</td><td class="num">+0.031</td><td><span class="ok">OK</span></td></tr>
+              <tr><td><span class="feat">C1 · <svg class="gdt" viewBox="0 0 16 16" role="img" aria-label="position"><circle cx="8" cy="8" r="4.6"/><path d="M8 1.5v13M1.5 8h13"/></svg> 0.03</span></td><td class="num">0.030</td><td class="num">0.012</td><td class="num">—</td><td><span class="ok">OK</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="verdict"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M8 12.5l2.8 2.8L16.5 9"/></svg><b data-i18n="i.pass">ผลตรวจ: ผ่านทุกตำแหน่ง</b><span>QC · 03 OCT · CMM</span></p>
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="section industries" aria-labelledby="ind-title">
+      <h2 id="ind-title" data-i18n="ind.title">ลูกค้าของเราอยู่ในอุตสาหกรรม</h2>
+      <ul class="ind-list">
+        <li data-i18n="ind.auto">ชิ้นส่วนยานยนต์</li>
+        <li data-i18n="ind.elec">เครื่องใช้ไฟฟ้า</li>
+        <li data-i18n="ind.food">เครื่องจักรอาหาร</li>
+        <li data-i18n="ind.auto2">ระบบอัตโนมัติในโรงงาน</li>
+        <li data-i18n="ind.med">อุปกรณ์การแพทย์</li>
+      </ul>
+    </section>
+
+    <!-- Process -->
+    <section class="section process" id="process" aria-labelledby="p-title">
+      <div class="section-head">
+        <h2 id="p-title" data-i18n="p.title">จากแบบถึงของส่ง</h2>
+        <p class="en-line" lang="en">FROM DRAWING TO DELIVERY</p>
+      </div>
+      <ol class="steps part" data-chamfer="16" data-holes="tl,br">
+        <li class="step">
+          <span class="step-no">1</span>
+          <h3 data-i18n="s1.t">ส่งแบบ</h3>
+          <p data-i18n="s1.d">PDF, DWG หรือ STEP พร้อมวัสดุและจำนวน</p>
+        </li>
+        <li class="step">
+          <span class="step-no">2</span>
+          <h3 data-i18n="s2.t">ใบเสนอราคา</h3>
+          <p data-i18n="s2.d">ภายใน 24 ชม. ทำการ พร้อมระยะเวลาผลิต</p>
+        </li>
+        <li class="step">
+          <span class="step-no">3</span>
+          <h3 data-i18n="s3.t">ชิ้นตัวอย่าง</h3>
+          <p data-i18n="s3.d">5–7 วัน พร้อมรายงานผลตรวจชิ้นแรก</p>
+        </li>
+        <li class="step">
+          <span class="step-no">4</span>
+          <h3 data-i18n="s4.t">ผลิตและส่งของ</h3>
+          <p data-i18n="s4.d">ส่งตามรอบที่ตกลง ทั่วภาคตะวันออกและกรุงเทพฯ</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" aria-labelledby="c-title">
+      <div class="part contact-card" data-chamfer="24" data-holes="tl,tr,bl,br">
+        <div class="c-copy">
+          <h2 id="c-title" data-i18n="c.title">คุยกับฝ่ายขาย</h2>
+          <p class="en-line" lang="en">TALK TO SALES</p>
+          <dl class="c-list">
+            <div><dt data-i18n="c.addr">ที่อยู่</dt><dd data-i18n="c.addrVal">99/9 หมู่ 5 นิคมอุตสาหกรรมตัวอย่าง จ.ชลบุรี 20160</dd></div>
+            <div><dt data-i18n="c.tel">โทร</dt><dd>038-XXX-XXX <span class="muted" data-i18n="c.sample">(ตัวอย่าง)</span></dd></div>
+            <div><dt>LINE</dt><dd>@pikul-demo</dd></div>
+            <div><dt data-i18n="c.mail">อีเมล</dt><dd><a href="mailto:sales@pikul-demo.example">sales@pikul-demo.example</a></dd></div>
+            <div><dt data-i18n="c.hours">เวลาทำการ</dt><dd data-i18n="c.hoursVal">จันทร์–เสาร์ 08:00–17:00</dd></div>
+          </dl>
+          <a class="btn btn-cut" href="#rfq" data-i18n="cta.quote">ขอใบเสนอราคา</a>
+        </div>
+        <figure class="plan">
+          <svg viewBox="0 0 360 260" role="img" aria-labelledby="plan-cap">
+            <title id="plan-cap">ผังโรงงาน (ภาพประกอบ)</title>
+            <path class="road" d="M0 210h360M300 0v260" />
+            <path class="lot" d="M30 30h240v150H30z" />
+            <path class="bldg" d="M50 50h130v90H50zM195 50h60v60h-60z" />
+            <path class="dock" d="M180 120h15v20h-15z" />
+            <circle class="pin" cx="115" cy="95" r="9" />
+            <text x="58" y="72" data-i18n="plan.plant">อาคารผลิต 1</text>
+            <text x="200" y="72" data-i18n="plan.qc">QC</text>
+            <text x="306" y="20" data-i18n="plan.road">ถ.สาย 3</text>
+          </svg>
+          <figcaption data-i18n="plan.cap">ผังโรงงาน (ภาพประกอบ)</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p data-i18n="foot.disclaimer">PIKUL Precision Parts เป็นบริษัทสมมติ เว็บไซต์นี้ทำขึ้นเพื่อเป็นตัวอย่างงานออกแบบและพัฒนาเว็บไซต์บริษัท ไม่มีการเก็บหรือส่งข้อมูลใด ๆ</p>
+    <p class="muted">© 2026 · Portfolio demo</p>
+  </footer>
+</div>
+
+<div class="laser" aria-hidden="true"></div>
+<script src="app.js" defer></script>
+</body>
+</html>
