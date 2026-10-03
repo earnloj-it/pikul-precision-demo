@@ -1,32 +1,45 @@
 # PIKUL Precision Parts: sample company website
 
-A sample corporate website for a **fictional** Thai CNC machining and sheet-metal manufacturer, built as a portfolio piece.
+A multi-page company website for a **fictional** Thai CNC machining and sheet-metal manufacturer, built as a portfolio piece.
 
 **Live demo:** https://earnloj-it.github.io/pikul-precision-demo/
 
-> PIKUL Precision Parts is not a real company. Its name, products, machines, figures and contact details are all made up for the demo. The quote form validates input and shows a confirmation, but nothing is sent or stored.
+> PIKUL Precision Parts is not a real company. Its name, products, machines, figures and contact details are all invented for the demo. **All photographs are AI-generated.** The quote form validates input and shows a confirmation, but sends and stores nothing.
 
-## What it shows
+## Pages
 
-- **Request-for-quote form in the first screen:** drag-and-drop drawing upload (PDF, DWG, DXF, STEP, IGES), process, material, quantity and contact fields, with inline validation and a success state.
-- **Thai / English switch:** every string on the page has both languages, and the choice is remembered.
-- **Mobile-first layout:** the quote form comes straight after the headline on phones, and tables turn into stacked rows.
-- **A visual identity from the trade itself:** the page is a steel sheet on a laser table, with millimetre rulers on the edges. Each section is a part "cut" from the sheet: when it scrolls into view, a laser head traces its outline and peels off the blue protective film.
-- **Content buyers actually check:** capabilities with tolerances and sizes, a machine list, a sample inspection report, the RFQ-to-delivery process, and contact details with a plant map.
-- **Accessibility basics:** semantic sections and tables, a skip link, keyboard focus styles, and labels on every field. `prefers-reduced-motion` turns the laser animation off.
+| Page | What's on it |
+|---|---|
+| `index.html` Home | Full-screen factory photo hero, a quick-quote bar, about cards, service tiles, featured work, quality and a call-to-action band |
+| `services.html` Services | Photo slider, one section per service with specs, and a machine list |
+| `works.html` Our work | Product gallery with category filter |
+| `contact.html` Contact | Contact details, illustrated map, and a quote request form with drawing upload |
+
+## Features
+
+- **Thai / English switch** on every page. The choice is remembered between pages.
+- **Quick quote → full form:** process, material and quantity chosen on the home page carry over to the contact form.
+- **Quote form:** drag-and-drop drawing upload (PDF, DWG, DXF, STEP, IGES), inline validation, and a success state.
+- **Mobile-ready:** hamburger menu, stacked layouts and no horizontal scrolling at 375px.
+- **Accessibility basics:** semantic headings and tables, a skip link, visible focus, labelled fields and a keyboard-operable slider. Motion respects `prefers-reduced-motion`.
 
 ## Tech
 
-Plain HTML, CSS and JavaScript. There is no build step and no dependencies apart from Google Fonts (Chakra Petch and Bai Jamjuree). It is hosted on GitHub Pages.
+Plain HTML, CSS and JavaScript. There is no build step and no framework. The only external resource is the Prompt font from Google Fonts. Hosted on GitHub Pages.
 
 ```
-index.html   page structure and Thai copy
-styles.css   steel-sheet design system and responsive layout
-app.js       TH/EN strings, part outlines, laser trace, quote form
+index.html, services.html, works.html, contact.html
+styles.css       design tokens, layout, components, responsive rules
+app.js           TH/EN strings, menu, slider, filter, quote form
+assets/img/      AI-generated photos (JPG)
 ```
 
-Append `?cut` to the URL to show every part in its finished "cut" state without the animation.
+The header and footer are written in `index.html` and copied into the other pages with a small script, so all four pages stay identical.
+
+## Image credits
+
+Every photo in `assets/img/` was generated with OpenAI's image model (gpt-image-2, through Codex) for this demo. None shows a real factory, product or person. The exact prompt is embedded in each JPG's comment field.
 
 ## License
 
-Code: MIT. The fictional brand, copy and illustrations are part of the portfolio sample.
+Code: MIT. The fictional brand and copy are part of the portfolio sample.
